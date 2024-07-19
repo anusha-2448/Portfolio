@@ -1,0 +1,340 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light gray background for the body */
+}
+
+#profile-img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#about {
+    background-color: #f5f5f5; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: -20px; /* Negative margin to offset container padding */
+    margin-right: -20px; /* Negative margin to offset container padding */
+}
+
+#container {
+    background-color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.nav-link.text-black {
+    color: black !important; /* Set the default text color to black */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-link.text-black:hover {
+    color: blue !important; /* Change text color to blue on hover */
+}
+
+#projects {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Add margin to separate from the section above */
+}
+
+.project-card {
+    background-color: #ffffff; /* White background color */
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.project-two {
+    background-color: #f5f5f5; /* Light gray background color */
+}
+
+.project-three {
+    background-color: #ebebeb; /* Another shade of gray */
+}
+
+.project-four {
+    background-color: #e0e0e0; /* Very light gray */
+}
+
+.project-five {
+    background-color: #d5d5d5; /* Light gray */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust width of control icons as needed */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: white; /* Color of the control icons */
+}
+
+.btn-primary {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold font */
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden; /* Hide overflow for pseudo-element */
+    transition: color 0.4s, background-color 0.4s; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #fff; /* White background for pseudo-element */
+    z-index: -1; /* Behind the button */
+    transition: height 0.4s;
+}
+
+.btn-primary:hover::before {
+    height: 100%; /* Expand the pseudo-element on hover */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: auto;
+}
+
+.btn-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-circle a {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 16px 24px; /* Adjust padding to fit your design */
+    background-color: #9c9c9e; /* Adjust background color */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-circle a:hover {
+    background-color: #bcbcef; /* Adjust hover background color */
+}
+
+#internships {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 50px 0;
+}
+
+#skills {
+    background-color: #e4e4e4; /* Light gray background color */
+    padding: 50px 0;
+}
+
+.internship-item {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: #d5d5d5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.internship-icon {
+    margin-bottom: 20px;
+}
+
+.internship-icon i {
+    color: #b0b0b0; /* Gray color for icons */
+}
+
+#certifications {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 50px 0;
+}
+
+.certifications-item {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #d5d5d5; /* Light gray
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.certifications-icon {
+    margin-bottom: 20px;
+}
+
+.certifications-icon i {
+    color: #b0b0b0; /* Gray color for icons */
+}
+
+#education {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 50px 0;
+}
+
+.education-item {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #d5d5d5; /* Light gray background color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 2%;
+}
+
+.education-icon {
+    margin-bottom: 20px;
+}
+
+.education-icon i {
+    color: #b0b0b0; /* Gray color for icons */
+}
+
+footer {
+    background: rgba(27, 28, 27, 0.9);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+}
+
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.progress-circle .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e2f30;
+}
+
+.left-half-clipper,
+.right-half-clipper {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-half-clipper {
+    left: 0;
+}
+
+.right-half-clipper {
+    left: 50%;
+}
+
+.value-bar,
+.first50-bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #a2d7f0;
+    border-radius: 50%;
+}
+
+.first50-bar {
+    clip: rect(0, 50px, 100px, 0);
+}
+
+.value-bar {
+    clip: rect(0, 100px, 100px, 50px);
+    animation: progressBar 1.5s linear forwards;
+}
+
+@keyframes progressBar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#internship {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 50px 0;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    flex-shrink: 0;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.timeline-icon i {
+    color: #b0b0b0; /* Gray color for icons */
+}
+
+.timeline-content {
+    flex-grow: 1;
+}
+
+.timeline-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+}
